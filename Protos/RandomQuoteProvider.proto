@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "QuoteOfTheDay";
+
+message Empty { }
+
+message Quote {
+    string text = 1;
+    string author = 2;
+}
+
+service RandomQuoteProvider { 
+    rpc Get(Empty) returns (Quote);
+}
