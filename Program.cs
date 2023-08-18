@@ -2,8 +2,6 @@
 using QuoteOfTheDay.Infrastructure.QuoteOfTheDayService;
 using QuoteOfTheDay.Infrastructure.TodayProvider;
 
-var dt = DateTime.Today;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
